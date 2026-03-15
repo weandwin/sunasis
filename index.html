@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碧辟佳阳 | BP SunOasis 太阳能</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #e9e9e9;
+        }
+
+        /* 统一宽度居中 */
+        #header, #banner, #container, #footer {
+            width: 852px;
+            margin: 0 auto;
+        }
+
+        /* 顶部LOGO */
+        #header {
+            background: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            height: 60px;
+        }
+
+        /* 轮播banner */
+        #banner {
+            height: 200px;
+            background: #78a0b8;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* 右上角小圆点 */
+        .dots {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            display: flex;
+            gap: 10px;
+        }
+        .dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: rgba(160,200,232,0.8);
+        }
+        .dot:nth-child(1) { transform: translate(-30px, -5px); }
+        .dot:nth-child(2) { transform: translate(0, 5px); }
+        .dot:nth-child(3) { transform: translate(30px, 15px); }
+
+        /* 主体两栏布局 */
+        #container {
+            background: #99cc00;
+            overflow: hidden;
+        }
+
+        /* 左侧导航 */
+        #nav {
+            float: left;
+            width: 161px;
+            background: #00801b;
+            padding: 15px 0 20px 9px;
+        }
+        #nav li {
+            margin-bottom: 8px;
+        }
+        #nav a {
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 4px 0 4px 6px;
+            background: #006314;
+            border-left: 3px solid #ccff66;
+            text-decoration: none;
+        }
+        #nav a:hover {
+            background: #99cc00;
+            color: #003300;
+            border-left-color: #fff;
+        }
+
+        /* 右侧内容 */
+        #content {
+            float: left;
+            width: 691px;
+            background: #fff;
+            border-right: 1px solid #daeda3;
+            padding: 0 0 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+        #content h2 {
+            font-size: 20px;
+            color: #00801b;
+            border-bottom: 2px solid #99cc00;
+            padding: 15px 15px 6px;
+            margin-bottom: 12px;
+        }
+        #content p, #content ul {
+            margin: 0 15px 12px;
+            text-align: justify;
+        }
+        /* 右侧环绕图片 */
+        .pic {
+            float: right;
+            width: 260px;
+            margin: 0 15px 10px;
+            border: 1px solid #eee;
+        }
+        /* 箭头列表 */
+        #content li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+        }
+        #content li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #99cc00;
+            font-weight: bold;
+        }
+
+        /* 清除浮动 */
+        .clear { clear: both; height: 0; }
+
+        /* 底部版权 */
+        #footer {
+            background: #fff;
+            border-top: 3px solid #99cc00;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <img class="logo" src="https://picsum.photos/id/180/600/100" alt="BP SunOasis">
+</div>
+
+<div id="banner">
+    <img class="banner-bg" src="https://picsum.photos/id/15/852/200" alt="banner">
+    <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+<div id="container">
+    <div id="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">产品与服务</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">职业发展</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>公司简介</h2>
+        <img class="pic" src="https://picsum.photos/id/20/260/180" alt="公司图片">
+        
+        <p>碧辟佳阳太阳能有限公司成立于2005年11月18日，地处西安经济技术开发区，是由BP太阳能及新疆新能源股份有限公司两家股东按强强互补的经营机制投资设立，是中国最大的专业从事太阳能等新能源的开发、利用的高新技术企业之一。碧辟佳阳致力于提供和发展离网和并网太阳能系统，拥有专业的采购、生产、研发、销售和项目工程队伍，为您带来量身定做的太阳能产品和配套服务。</p>
+
+        <p>我们致力于制造高质量的太阳能组件，设计、安装、维护离网及并网太阳能系统。主要应用于：</p>
+        <ul>
+            <li>为通讯领域、铁路各站点及石油管道提供可靠、经济、几乎免于维护的太阳能电源。</li>
+            <li>为偏远无电地区的村落和家庭提供基本照明、医疗、教育所需电力。</li>
+            <li>为城市建筑提供并网电力。</li>
+            <li>通过太阳能系统与屋顶、天窗、幕墙、遮阳板、雨篷等建筑结构完美结合，创造出建筑美学和能源供应相结合的太阳能光伏建筑（BIPV）。</li>
+        </ul>
+
+        <p>在合资前后，我们在中国参与了各种乡村供电项目和复杂的大型并网工程，为各类客户提供了国际领先水平的产品和服务，主要有：</p>
+        <ul>
+            <li>浙江台州东矶岛通讯覆盖工程——岛屿上的移动通讯基站太阳能供电工程。</li>
+            <li>深圳国际园林花卉博览园1兆瓦项目——中国最大的建筑一体化太阳能并网项目。</li>
+            <li>光明工程——解决偏远地区二千三百万无电人口的电力供应的全国性太阳能项目，包括新疆，四川甘孜，西藏那曲，阿里等地的乡级电站建设。</li>
+            <li>中国移动省际光传送网西部传输网络工程。</li>
+            <li>中国移动西部环、联通东北基站、铁通通信站、新疆油田通信站，广东微波，广东电信通信站等项目。</li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<div id="footer">
+    <p>Copyright © 2007-2008 BP SunOasis Company Limited. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
